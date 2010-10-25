@@ -1,0 +1,26 @@
+{
+  "name": "node-psi-server",
+  "description": "Published Subject Identifier server for topic maps.",
+  "version": "0.1.0",
+  "homepage": "http://github.com/jansc/node-psi-server",
+  "maintainers": [
+    {
+      "name": "Jan Schreiber",
+      "email": "jans@ravn.no",
+      "web": "http://www.semanticheadache.com"
+    }
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/mit-license.php"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "http://github.com/jansc/node-psi-server"
+    }
+  ],
+  "engines": { "node": ">= 0.2.0" }
+}

@@ -1,0 +1,200 @@
+{
+  "version": "1.0",
+  "item_type": "topicmap",
+  "reifier": "ii:http://maiana.topicmapslab.de/u/jansc/tm/node-psi-server-config/#$__1.meta",
+  "topics": [
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/logfile"
+      ],
+      "names": [
+        {
+          "value": "Logfile"
+        }
+      ],
+      "occurrences": [
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/configuration-value",
+          "value": "./node-psi-server.log"
+        },
+        {
+          "type": "si:http://purl.org/dec/elements/1.1/description",
+          "value": "Absolute path and filename to the server log file. Must be writable by this process"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/configuration-value"
+      ],
+      "names": [
+        {
+          "value": "Configuration value"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.topicmaps.org/iso13250/model/type-instance"
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/port"
+      ],
+      "names": [
+        {
+          "value": "Port"
+        }
+      ],
+      "occurrences": [
+        {
+          "type": "si:http://purl.org/dec/elements/1.1/description",
+          "value": "Port for the web server."
+        },
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/configuration-value",
+          "value": "8000",
+          "datatype": "http://www.w3.org/2001/XMLSchema#integer"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/type"
+      ],
+      "names": [
+        {
+          "value": "Type Role"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/type-is-published"
+      ],
+      "names": [
+        {
+          "value": "Element is published"
+        }
+      ]
+    },
+    {
+      "item_identifiers": [
+        "http://maiana.topicmapslab.de/u/jansc/tm/node-psi-server-config/#$__1.meta"
+      ],
+      "occurrences": [
+        {
+          "type": "si:http://purl.org/dec/elements/1.1/description",
+          "value": "\nThis is a sample configuration file for node-psi-server, the PSI server\nrunning on node.js.\nYou can use this file as a starting point for you own configuration files.\nUnforunately, tmjs (the underlying Topic Maps engine) only supports JTM,\nso you have to convert this file into JTM manually, e.g. by pasting it into \nhttp://mappify.org/\nThough you could edit the resulting JTM file directly, I suggest that you\nuse this CTM file as a master file.\n"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/publisher-fallback"
+      ],
+      "names": [
+        {
+          "value": "Publisher fallback"
+        }
+      ],
+      "occurrences": [
+        {
+          "type": "si:http://purl.org/dec/elements/1.1/description",
+          "value": "Fallback value for the publisher name"
+        },
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/configuration-value",
+          "value": "Unknown"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://purl.org/dec/elements/1.1/description"
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/psi-status"
+      ],
+      "names": [
+        {
+          "value": "PSI status fallback"
+        }
+      ],
+      "occurrences": [
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/configuration-value",
+          "value": "Experimental"
+        },
+        {
+          "type": "si:http://purl.org/dec/elements/1.1/description",
+          "value": "Fallback value for the PSI status"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/created-fallback"
+      ],
+      "names": [
+        {
+          "value": "Created fallback"
+        }
+      ],
+      "occurrences": [
+        {
+          "type": "si:http://purl.org/dec/elements/1.1/description",
+          "value": "Fallback value for the creation date."
+        },
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/configuration-value",
+          "value": "2010-10-01",
+          "datatype": "http://www.w3.org/2001/XMLSchema#date"
+        }
+      ]
+    },
+    {
+      "subject_identifiers": [
+        "http://psi.semanticheadache.com/node-psi-server/debug-level"
+      ],
+      "names": [
+        {
+          "value": "Debug level"
+        }
+      ],
+      "occurrences": [
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/configuration-value",
+          "value": "debug"
+        },
+        {
+          "type": "si:http://purl.org/dec/elements/1.1/description",
+          "value": "Sets a. debug level. Can be 'debug' or 'info'"
+        }
+      ]
+    }
+  ],
+  "associations": [
+    {
+      "type": "si:http://psi.semanticheadache.com/node-psi-server/type-is-published",
+      "roles": [
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/type",
+          "player": "si:http://psi.topicmaps.org/iso13250/model/type-instance"
+        }
+      ]
+    },
+    {
+      "type": "si:http://psi.semanticheadache.com/node-psi-server/type-is-published",
+      "roles": [
+        {
+          "type": "si:http://psi.semanticheadache.com/node-psi-server/type",
+          "player": "si:http://purl.org/dec/elements/1.1/description"
+        }
+      ]
+    }
+  ]
+}

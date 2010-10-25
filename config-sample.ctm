@@ -1,0 +1,73 @@
+%encoding "UTF-8"
+%version 1.0
+%prefix nps <http://psi.semanticheadache.com/node-psi-server/>
+%prefix dc <http://purl.org/dec/elements/1.1/>
+%prefix xsd <http://www.w3.org/2001/XMLSchema#>
+
+~ ?meta
+
+?meta
+    dc:description: """
+This is a sample configuration file for node-psi-server, the PSI server
+running on node.js.
+You can use this file as a starting point for you own configuration files.
+Unforunately, tmjs (the underlying Topic Maps engine) only supports JTM
+at the moment, so you have to convert this file into JTM manually, e.g.
+by pasting it into http://mappify.org/
+Though you could edit the resulting JTM file directly, I suggest that you
+use this CTM file as a master file. Once tmjs implements CTM support, this
+step is no longer needed. Be patient!
+""".
+
+
+#(Ontology. DO NOT CHANGE!)#
+nps:type-is-published - "Element is published".
+nps:configuration-value - "Configuration value".
+nps:type - "Type Role".
+
+#(Configuration. Adjust the configuration-values to your needs.)#
+nps:logfile
+    - "Logfile";
+    dc:description: "Absolute path and filename to the server log file. Must be writable by this process";
+    nps:configuration-value: "./node-psi-server.log"
+    .
+
+nps:debug-level
+    - "Debug level";
+    dc:description: "Sets a. debug level. Can be 'debug' or 'info'";
+    nps:configuration-value: "debug"
+    .
+
+nps:port
+    - "Port";
+    dc:description: "Port for the web server.";
+    nps:configuration-value: "8000"^^xsd:integer
+    .
+
+nps:created-fallback
+    - "Created fallback";
+    dc:description: "Fallback value for the creation date.";
+    nps:configuration-value: "2010-10-01"^^xsd:date
+    .
+
+nps:publisher-fallback
+    - "Publisher fallback";
+    dc:description: "Fallback value for the publisher name";
+    nps:configuration-value: "Unknown"
+    .
+
+nps:psi-status
+    - "PSI status fallback";
+    dc:description: "Fallback value for the PSI status";
+    nps:configuration-value: "Experimental"
+    .
+
+#(
+List of elements to include on PSI pages/topic maps.
+You can refer to occurrence types and/or association types.
+The default setting of this file is occurrences of the type dc:description
+and type-instance associations.
+)#
+nps:type-is-published(nps:type : dc:description)
+nps:type-is-published(nps:type : <http://psi.topicmaps.org/iso13250/model/type-instance>)
+
