@@ -257,7 +257,6 @@
     }
 
     server = Connect.createServer(
-        Connect.responseTime(),
         Connect.logger({stream: logStream}),
         Connect.errorHandler({ showStack: true, dumpExceptions: true }),
         Connect.router(function (app) {

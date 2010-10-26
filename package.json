@@ -6,7 +6,7 @@
   "maintainers": [
     {
       "name": "Jan Schreiber",
-      "email": "jans@ravn.no",
+      "email": "jans[at]ravn.no",
       "web": "http://www.semanticheadache.com"
     }
   ],
@@ -22,5 +22,5 @@
       "url": "http://github.com/jansc/node-psi-server"
     }
   ],
-  "engines": { "node": ">= 0.2.0" }
+  "engines": { "node": ">= 0.2.4" }
 }
